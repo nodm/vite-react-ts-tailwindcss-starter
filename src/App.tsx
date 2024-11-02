@@ -2,6 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import tailwindCssLogo from './assets/tailwindcss.svg';
 import viteLogo from '/vite.svg';
+import { Button } from '@/components/ui/button';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -49,14 +50,13 @@ function App() {
         </h1>
 
         <div className="text-center mb-8">
-          <button
+          <Button
             onClick={() => {
               setCount((count) => count + 1);
             }}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300"
           >
             count is {count}
-          </button>
+          </Button>
           <p className="mt-4 text-gray-600">
             Edit{' '}
             <code className="bg-gray-100 rounded px-1 py-0.5 font-mono text-sm">
