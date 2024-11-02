@@ -13,6 +13,7 @@ function App() {
           <a
             href="https://vitejs.dev"
             target="_blank"
+            rel="noreferrer"
             className="transition-transform hover:scale-110"
           >
             <img src={viteLogo} alt="Vite logo" className="h-16 w-16" />
@@ -20,6 +21,7 @@ function App() {
           <a
             href="https://react.dev"
             target="_blank"
+            rel="noreferrer"
             className="transition-transform hover:scale-110"
           >
             <img
@@ -31,6 +33,7 @@ function App() {
           <a
             href="https://tailwindcss.com"
             target="_blank"
+            rel="noreferrer"
             className="transition-transform hover:scale-110"
           >
             <img
@@ -47,7 +50,9 @@ function App() {
 
         <div className="text-center mb-8">
           <button
-            onClick={() => setCount((count) => count + 1)}
+            onClick={() => {
+              setCount((count) => count + 1);
+            }}
             className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-300"
           >
             count is {count}
